@@ -7,8 +7,14 @@
 //   palindrome("abba") === true
 //   palindrome("abcdefg") === false
 
-function palindrome(str: string) {
-    return str === str.split('').reverse().join('');
+// best solution because it only has a singular check
+// function palindrome(str: string): boolean {
+//     return str === str.split('').reverse().join('');
+// }
+
+// secondary solution because .every() doubles the amounts of checks because it checks the first and last then the last and first.
+function palindrome(str: string): boolean{
+    return str.split('').every((char, i) => char === str[str.length - i - 1]);
 }
 
 export default palindrome;
