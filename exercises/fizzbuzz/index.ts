@@ -12,6 +12,6 @@
 //   4
 //   buzz
 
-function fizzBuzz(n) {}
+function fizzBuzz(n: number) {}
 
-module.exports = fizzBuzz;
+export default fizzBuzz;
