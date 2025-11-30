@@ -1,4 +1,4 @@
-const palindrome = require('./index');
+import palindrome from './index';
 
 test('palindrome function is defined', () => {
   expect(typeof palindrome).toEqual('function');
