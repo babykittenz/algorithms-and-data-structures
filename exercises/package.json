@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest ./weave/test.js --watch"
   },
   "author": "stephen grider",
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^30.0.0",
+    "jest": "^30.5.1",
     "ts-jest": "^29.4.5"
   },
   "dependencies": {
